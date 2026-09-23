@@ -1,0 +1,16 @@
+# The build output. `./build.sh` regenerates it in seconds, and committing a
+# signed bundle to git is how you end up shipping a stale one.
+Paintbox.app/
+Paintbox.zip
+
+# Review artefacts from the multi-agent audit. KNOWN-ISSUES.md carries what a
+# reader actually needs; these are the raw working files, they run to hundreds
+# of kilobytes, and they carry absolute paths from the machine that made them.
+review-findings.json
+review-findings-critic.json
+review-findings-remaining.json
+polish-workflow.js
+fix-only-workflow.js
+
+.DS_Store
+*.log
