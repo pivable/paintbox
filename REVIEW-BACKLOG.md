@@ -54,3 +54,8 @@ on a session limit with two severity groups fixed. A resume then re-ran the veri
 instead of replaying it from cache, and an API outage killed 246 of 290 agents — 2.3M tokens
 for nothing. The lesson is in this folder: findings live in files here, not inside a workflow's
 memory, and the two fixing runs that followed read them from disk.
+
+## Where to go next
+
+This file is history. For working on the project read `CLAUDE.md`; for what is still broken read
+`KNOWN-ISSUES.md`.
