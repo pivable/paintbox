@@ -27,12 +27,18 @@ and are listed here rather than left for you to discover.
 - **Remove Background silently ignores an active selection while its menu neighbours honour one** *(ux)*
 
 
-## The two that were fixed, and why those two
+## The three that were fixed, and why those three
 
-One was data loss: Save As could point two windows at the same file, which is exactly the
-hazard that Open already guarded against. The other was wrong output in something this README
-tells you to run: the headless `--cutout` wrote PNG bytes whatever you named the output, so the
-documented batch loop produced mislabelled files.
+Two blocked a release. One was data loss: Save As could point two windows at the same file,
+which is exactly the hazard that Open already guarded against. The other was wrong output in
+something this README tells you to run: the headless `--cutout` wrote PNG bytes whatever you
+named the output, so the documented batch loop produced mislabelled files.
+
+The third was the documentation: the README described code that had since changed. It gave a
+stale self-test count, said zoom is anchored at the scroll origin (it has held the visible
+centre since the polish pass) and that filters always run over the whole canvas (only the
+selection's box is rendered now). A fourth stale claim, about Crop to Selection, was corrected
+with them. The detail is in `REVIEW-BACKLOG.md`.
 
 The rest are interface and tidiness. They are real, and none of them loses your work.
 
